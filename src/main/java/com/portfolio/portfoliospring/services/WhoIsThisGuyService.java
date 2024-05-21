@@ -16,4 +16,5 @@ public class WhoIsThisGuyService {
     public List<WhoIsThisGuy> getAll(){
         return repos.findAll();
     }
+    public WhoIsThisGuy getAt(Long id){ return repos.findById(id).orElse(null);}
 }
